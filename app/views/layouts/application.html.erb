@@ -13,6 +13,13 @@
     <%= render 'layouts/header' %>
       <main>
         <p id="notice"><%= notice %></p>
+
+              <%= link_to root_path, class:"nav-link text-light" do %>
+              Bookers
+              <% end %>
+
+          <%= yield %>
+
       </main>
     <%= render 'layouts/footer' %>
   </body>
