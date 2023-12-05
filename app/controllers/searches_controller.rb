@@ -1,10 +1,6 @@
 class SearchesController < ApplicationController
   before_action :authenticate_user!
 
-  def self.search_for(content, method)
-    # 検索のロジックを実装する
-  end
-
   def search
     @model = params[:model]
     @content = params[:content]
